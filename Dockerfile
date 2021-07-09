@@ -28,9 +28,10 @@ COPY . /app
 # Install user environment
 #=================================================================================
 
-# update the conda packages
 USER notebook
-RUN conda update -y conda pip
+
+# update the conda packages
+#RUN conda update -y conda pip
 
 # install latest iris version
 RUN conda env update -n base --file environment.yml
