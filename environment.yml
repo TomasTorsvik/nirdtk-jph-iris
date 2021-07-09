@@ -1,0 +1,5 @@
+name: base
+channel:
+  - conda-forge
+dependencies:
+  - iris
